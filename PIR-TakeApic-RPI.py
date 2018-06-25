@@ -9,7 +9,7 @@ from email.mime.application import MIMEApplication
 
 camera = PiCamera()
 
-user = "eric85916@gmail.com"
+user = "eric85916@gmail.com"                
 pwd = "vydoilqhmmmhldpx"
 to = "eric85916@gmail.com"
 
@@ -23,7 +23,7 @@ msg.attach(part)
 
 GPIO.setwarnings(False)
 GPIO.setmode(GPIO.BCM)
-GPIO.setup(12, GPIO.IN)         #Read iutput from PIR motion sensor
+GPIO.setup(12, GPIO.IN)                        #Read iutput from PIR motion sensor
 
 seg = (4, 17, 27, 22, 23, 24, 25)
 
@@ -45,23 +45,23 @@ for n in range(0, 7):
 c = 0 
 while True:
     i=GPIO.input(12)
-    if i==0:                 #When output from motion sensor is LOW
+    if i==0:                                      #When output from motion sensor is LOW
         time.sleep(.1)
-    elif i==1:#When output from motion sensor is HIGH
+    elif i==1:                                    #When output from motion sensor is HIGH
         c = 0
-        for x in range(0, 4):
+        for x in range(0, 4):                     #Countdown three seconds on 7seg
             for n in range(0, 7):
                 GPIO.output(seg[n], digits[str(3 - c % 10)][n])
             time.sleep(1)
             c += 1
         
-        camera.capture('/home/pi/Desktop/image.jpg')
+        camera.capture('/home/pi/Desktop/image.jpg')                 #Take a pic
         att1 = MIMEApplication(open("/home/pi/Desktop/image.jpg",'rb').read())
         att1.add_header('Content-Disposition','attachment',filename="test.jpg")
         msg.attach(att1)
         smtpObj = smtplib.SMTP('smtp.gmail.com', 587)
         smtpObj.starttls()
         smtpObj.login('eric85916@gmail.com','vydoilqhmmmhldpx')
-        smtpObj.sendmail(user,to,msg.as_string())
+        smtpObj.sendmail(user,to,msg.as_string())  #send an email
         smtpObj.close
         time.sleep(5)
