@@ -6,25 +6,30 @@
 * Seven-segment display
 * PIR Motion Sensor
 * Dupont Line*12
-# PIR人體紅外線感測器
-* 以下連結有詳細說明  杜邦線接法請參照圖片  
+# PIR Motion Sensor
+* 以下連結有詳細說明PIR Motion Sensor介紹
+https://maker.pro/raspberry-pi/tutorial/how-to-interface-a-pir-motion-sensor-with-raspberry-pi-gpio
+* PIR-TakeApic-RPI杜邦線接法請參照圖片  
 ![image](https://github.com/eric85916/PIR-TakeApic-RPI/blob/master/PIR1.jpg)
 ![image](https://github.com/eric85916/PIR-TakeApic-RPI/blob/master/PIR2.jpg)
-#  七節顯示器
-* 以下連結有詳細說明
+# Seven-segment display
+* 以下連結有詳細說明Seven-segment display介紹
 * https://raspberrypi.readbook.tw/7seg.html
-* 杜邦線接法請參照圖片
+* PIR-TakeApic-RPI杜邦線接法請參照圖片
 ![image](https://github.com/eric85916/PIR-TakeApic-RPI/blob/master/7SEG1.jpg)
 ![image](https://github.com/eric85916/PIR-TakeApic-RPI/blob/master/7SEG2.jpg)
-# picamera
-* 以下連結有詳細說明
+# Picamera
+* 以下連結有詳細說明Picamera介紹
 * https://projects.raspberrypi.org/en/projects/getting-started-with-picamera
-* picamera接法請參照圖片
+* PIR-TakeApic-RPI的picamera裝法請參照圖片
 ![image](https://github.com/eric85916/PIR-TakeApic-RPI/blob/master/Picamera.jpg)
-# 收發郵件
-* 以下連結有詳細說明
+# Send & Receive the email
+* 以下連結有詳細說明如何透過smtp來發送郵件
 * https://ithelp.ithome.com.tw/articles/10196110
 * https://blog.csdn.net/handsomekang/article/details/9811355
+* 執行PIR-TakeApic-RPI後，所收到的信件
 ![image](https://github.com/eric85916/PIR-TakeApic-RPI/blob/master/ReceiveMail1.jpg)
 ![image](https://github.com/eric85916/PIR-TakeApic-RPI/blob/master/ReceiveMail2.jpg)
+* 此為收到的照片
+![image](https://github.com/eric85916/PIR-TakeApic-RPI/blob/master/ReceiveMail3.jpg)
 
