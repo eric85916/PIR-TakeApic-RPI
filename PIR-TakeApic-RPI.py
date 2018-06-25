@@ -25,7 +25,7 @@ GPIO.setwarnings(False)
 GPIO.setmode(GPIO.BCM)
 GPIO.setup(12, GPIO.IN)                        #Read iutput from PIR motion sensor
 
-seg = (4, 17, 27, 22, 23, 24, 25)
+seg = (4, 17, 27, 22, 23, 24, 25)              #Displaying the digits 0 to 9
 
 digits = {
     '0': (1, 1, 1, 0, 1, 1, 1),
