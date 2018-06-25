@@ -7,7 +7,7 @@
 * PIR Motion Sensor
 * Dupont Line*12
 #  PIR-TakeApic-RPI/7SEG1.jpg
-https://github.com/eric85916/PIR-TakeApic-RPI/blob/master/7SEG1.jpg
+![image](https://github.com/eric85916/PIR-TakeApic-RPI/blob/master/7SEG1.jpg)
 #
 #
 # 利用 sSMTP 傳送郵件 
