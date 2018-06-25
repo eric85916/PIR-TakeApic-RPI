@@ -32,12 +32,13 @@ https://maker.pro/raspberry-pi/tutorial/how-to-interface-a-pir-motion-sensor-wit
 ![image](https://github.com/eric85916/PIR-TakeApic-RPI/blob/master/ReceiveMail2.jpg)
 * 以下為執行PIR-TakeApic-RPI後所收到的照片
 ![image](https://github.com/eric85916/PIR-TakeApic-RPI/blob/master/ReceiveMail3.jpg)
-
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=PIR-TakeApic-RPI
-" target="_blank"><img src="http://img.youtube.com/vi/PIR-TakeApic-RPI/0.jpg" 
-alt="ReceiveMail3.jpg" width="240" height="180" border="10" /></a>
+* 以下為Demo影片
 https://youtu.be/E2TAWfKsFVs
 * 以下為PIR-TakeApic-RPI程式碼
+* STEP1:#Read iutput from PIR motion sensor
+* STEP2:Countdown three seconds on 7seg
+* STEP3:Camera take a pic
+* STEP4:Send&check the email&the photo 
 ```import RPi.GPIO as GPIO
 import time
 from picamera import PiCamera
@@ -95,13 +96,13 @@ while True:
             time.sleep(1)
             c += 1
         
-        camera.capture('/home/pi/Desktop/image.jpg')                 #Take a pic
+        camera.capture('/home/pi/Desktop/image.jpg')                 #Camera take a pic
         att1 = MIMEApplication(open("/home/pi/Desktop/image.jpg",'rb').read())
         att1.add_header('Content-Disposition','attachment',filename="test.jpg")
         msg.attach(att1)
         smtpObj = smtplib.SMTP('smtp.gmail.com', 587)
         smtpObj.starttls()
         smtpObj.login('eric85916@gmail.com','vydoilqhmmmhldpx')
-        smtpObj.sendmail(user,to,msg.as_string())  #send an email
+        smtpObj.sendmail(user,to,msg.as_string())  #send an email   #Send the email
         smtpObj.close
         time.sleep(5)
