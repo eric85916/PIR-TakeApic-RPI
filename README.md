@@ -30,10 +30,10 @@ https://maker.pro/raspberry-pi/tutorial/how-to-interface-a-pir-motion-sensor-wit
 * 執行PIR-TakeApic-RPI後，所收到的信件如下
 ![image](https://github.com/eric85916/PIR-TakeApic-RPI/blob/master/ReceiveMail1.jpg)
 ![image](https://github.com/eric85916/PIR-TakeApic-RPI/blob/master/ReceiveMail2.jpg)
-* 此為收到的照片
+* 以下為執行PIR-TakeApic-RPI後所收到的照片
 ![image](https://github.com/eric85916/PIR-TakeApic-RPI/blob/master/ReceiveMail3.jpg)
 * 以下為PIR-TakeApic-RPI程式碼
-'''import RPi.GPIO as GPIO
+```import RPi.GPIO as GPIO
 import time
 from picamera import PiCamera
 import smtplib
@@ -99,4 +99,4 @@ while True:
         smtpObj.login('eric85916@gmail.com','vydoilqhmmmhldpx')
         smtpObj.sendmail(user,to,msg.as_string())  #send an email
         smtpObj.close
-        time.sleep(5)'''
+        time.sleep(5)```
