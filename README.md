@@ -7,9 +7,7 @@
 * PIR Motion Sensor
 * Dupont Line*12
 # PIR人體紅外線感測器
->以下連結有詳細說明
->
->杜邦線接法請參照圖片
+>以下連結有詳細說明  杜邦線接法請參照圖片  
 ![image](https://github.com/eric85916/PIR-TakeApic-RPI/blob/master/PIR1.jpg)
 ![image](https://github.com/eric85916/PIR-TakeApic-RPI/blob/master/PIR2.jpg)
 #  七節顯示器
