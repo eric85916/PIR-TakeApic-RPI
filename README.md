@@ -8,7 +8,13 @@
 * Dupont Line*12
 #  PIR-TakeApic-RPI/7SEG1.jpg
 ![image](https://github.com/eric85916/PIR-TakeApic-RPI/blob/master/7SEG1.jpg)
-#
+![image](https://github.com/eric85916/PIR-TakeApic-RPI/blob/master/7SEG2.jpg)
+![image](https://github.com/eric85916/PIR-TakeApic-RPI/blob/master/PIR1.jpg)
+![image](https://github.com/eric85916/PIR-TakeApic-RPI/blob/master/PIR2.jpg)
+![image](https://github.com/eric85916/PIR-TakeApic-RPI/blob/master/ReceiveMail1.jpg)
+![image](https://github.com/eric85916/PIR-TakeApic-RPI/blob/master/ReceiveMail2.jpg)
+![image](https://github.com/eric85916/PIR-TakeApic-RPI/blob/master/Picamera.jpg)
+
 #
 # 利用 sSMTP 傳送郵件 
 http://yhhuang1966.blogspot.com/2017/02/ssmtp.html
