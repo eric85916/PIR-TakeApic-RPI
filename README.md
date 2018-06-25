@@ -35,10 +35,10 @@ https://maker.pro/raspberry-pi/tutorial/how-to-interface-a-pir-motion-sensor-wit
 * 以下為Demo影片
 https://youtu.be/E2TAWfKsFVs
 * 以下為PIR-TakeApic-RPI程式碼
-* STEP1:#Read iutput from PIR motion sensor
-* STEP2:Countdown three seconds on 7seg
-* STEP3:Camera take a pic
-* STEP4:Send&check the email&the photo 
+# STEP1:#Read iutput from PIR motion sensor
+# STEP2:Countdown three seconds on 7seg
+# STEP3:Camera take a pic
+# STEP4:Send&check the email&the photo 
 ```import RPi.GPIO as GPIO
 import time
 from picamera import PiCamera
