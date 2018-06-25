@@ -99,4 +99,4 @@ while True:
         smtpObj.login('eric85916@gmail.com','vydoilqhmmmhldpx')
         smtpObj.sendmail(user,to,msg.as_string())  #send an email
         smtpObj.close
-        time.sleep(5)```
+        time.sleep(5)
