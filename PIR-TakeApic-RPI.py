@@ -9,9 +9,9 @@ from email.mime.application import MIMEApplication
 
 camera = PiCamera()
 
-user = "eric85916@gmail.com"                
-pwd = "vydoilqhmmmhldpx"
-to = "eric85916@gmail.com"
+user = "yourmail"                
+pwd = "password"
+to = "yourmail"
 
 msg = MIMEMultipart()
 msg["Subject"] = "Warning"
@@ -61,7 +61,7 @@ while True:
         msg.attach(att1)
         smtpObj = smtplib.SMTP('smtp.gmail.com', 587)
         smtpObj.starttls()
-        smtpObj.login('eric85916@gmail.com','vydoilqhmmmhldpx')
+        smtpObj.login('yourmail','password')
         smtpObj.sendmail(user,to,msg.as_string())  #send an email
         smtpObj.close
         time.sleep(5)
